@@ -1,4 +1,4 @@
---!strict
+--!nonstrict
 
 --[[
 	Shows how to use the SocialService to send game invites to friends.
@@ -12,7 +12,7 @@ local SocialService = game:GetService("SocialService")
 local Players = game:GetService("Players")
 
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
-local player = Players.LocalPlayer
+local player = Players.LocalPlayer :: Player
 
 local iconImage: string = script:GetAttribute("IconImage") :: string
 	or "rbxasset://textures/ui/PlayerList/FriendIcon@3x.png"

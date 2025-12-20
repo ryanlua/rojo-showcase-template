@@ -13,7 +13,7 @@ local Players = game:GetService("Players")
 local ContextActionService = game:GetService("ContextActionService")
 
 -- Get the player's humanoid
-local player = Players.LocalPlayer
+local player = Players.LocalPlayer :: Player
 local character: Model = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid") :: Humanoid
 

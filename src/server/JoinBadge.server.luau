@@ -41,7 +41,7 @@ local function awardBadge(player: Player, badgeId: number): ()
 		if badgeInfo.IsEnabled then
 			-- Award badge
 			local awardSuccess: boolean, result: boolean = pcall(function(): boolean
-				return BadgeService:AwardBadge(player.UserId, badgeId)
+				return BadgeService:AwardBadgeAsync(player.UserId, badgeId)
 			end)
 
 			if not awardSuccess then

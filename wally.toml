@@ -1,10 +1,12 @@
 [package]
 name = "ryanlua/rojo-showcase-template"
+description = "Rojo template for basic showcases"
 version = "0.1.0"
 license = "Apache-2.0"
 authors = ["Ryan Luu <ryan.luu@ryanluu.dev>"]
-registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+registry = "https://github.com/UpliftGames/wally-index"
+repository = "https://github.com/ryanlua/rojo-showcase-template"
 private = true
 
 [dependencies]

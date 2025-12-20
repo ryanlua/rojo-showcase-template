@@ -1,4 +1,4 @@
---!strict
+--!nonstrict
 
 --[[
 	Prompts the given Player with the phone book to call someone.
@@ -15,7 +15,7 @@ local StarterGui = game:GetService("StarterGui")
 
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
 
-local player = Players.LocalPlayer
+local player = Players.LocalPlayer :: Player
 
 local iconImage: string = script:GetAttribute("IconImage") :: string or "rbxassetid://15239343417"
 local iconCaption: string = script:GetAttribute("IconCaption") :: string or "Phone Book"

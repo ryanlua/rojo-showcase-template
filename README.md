@@ -8,30 +8,14 @@ A Rojo template for Roblox showcases. Includes starter scripts every showcase sh
 
 Made for those getting into Rojo or wanting to explore how a showcase can be built with Rojo. This template is designed to be able to be used for all of your showcases using just one codebase as opposed to having different scripts for each showcase.
 
-Used in my collection of open-source showcases under my group, [The Winner Games](https://www.roblox.com/groups/4973811):
+Used in my collection of open-source showcases under the Roblox community, [The Winner Games](https://www.roblox.com/communities/4973811):
 
 * [House in the Woods](https://www.roblox.com/games/5813911804)
-* [Isolated Café](https://www.roblox.com/games/6200761971)
 * [Nature](https://www.roblox.com/games/7442772872)
 * [A New Winter](https://www.roblox.com/games/6279686336)
+* [Isolated Café](https://www.roblox.com/games/6200761971)
 
-## What's included
-
-### Scripts
-
-| Script | Description |
-| --- | --- |
-| **Screenshot HUD** | Adds a button to the topbar to enable the [`ScreenshotHud`](https://create.roblox.com/docs/reference/engine/classes/ScreenshotHud) which allows users to capture and save screenshots to their local device. |
-| **Invite Prompt** | Adds a button to the topbar to allow users to invite their friends using [`Player Invite Prompts`](https://create.roblox.com/docs/production/promotion/invite-prompts). |
-| **Join Badge** | A script that [awards users a badge](https://create.roblox.com/docs/production/publishing/badges#awarding-badges) when they join your experience which displays within the Badges category of their inventory. |
-| **Avatar Context Menu** | Enables the [`Avatar Context Menu`](https://create.roblox.com/docs/players/avatar-context-menu) context menu that allows users to send a friend request, begin a private chat, view the user's profile, or wave when a user clicks on another user's character. |
-| **Minimal Mouse Icon** | Changes the default [mouse icon](https://create.roblox.com/docs/reference/engine/classes/UserInputService#MouseIcon) to a more minimal cursor used on console. |
-| **Sprint Script** | Allows users to sprint by holding the left side <kbd>Shift</kbd> key, gamepad X button, or on-screen touch button. |
-| **Premium Chat Tag** | Adds a premium [chat tag](https://create.roblox.com/docs/chat/customizing-in-experience-text-chat#adding-chat-tags) to users with [Premium](https://www.roblox.com/premium/membership). |
-| **Contextual Proximity Prompt** | Creates a [contextual mobile button](https://create.roblox.com/docs/input/mobile#context-dependent-inputs) for triggering proximity prompts. [Example](https://youtu.be/WAwuNaPIkTs) |
-| **Seat Prompt** | Proximity prompts to sit in a seat when a user is near a seat with the [tag](https://create.roblox.com/docs/reference/engine/classes/CollectionService) `Seat`. |
-
-### Features
+## Features
 
 * High performance means no performance
 
@@ -68,7 +52,7 @@ Installation is easy and just like any other Rojo project.
 
 #### Using GitHub Codespaces
 
-1. Click on the <kbd>Open in GitHub Codespaces</kbd> button at the top of the README
+1. Click on the **Open in GitHub Codespaces** button at the top of the README
 1. Wait for the Codespace to be created
 1. Run `rojo serve` in the terminal or use the Rojo extension to serve
 1. Change the port visibility of `Rojo (34872)` to `Public`
@@ -89,7 +73,3 @@ Each script is customizable using [Instance Attributes](https://create.roblox.co
 ## Contributing
 
 Feel free to contribute to this project by creating a pull request. Please ensure that you follow the [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md) before contributing.
-
-## License
-
-This project is licensed under the [Apache License 2.0](LICENSE.md).
