@@ -53,7 +53,7 @@ Installation is easy and just like any other Rojo project.
 #### Using GitHub Codespaces
 
 1. Click on the **Open in GitHub Codespaces** button at the top of the README
-1. Wait for the codespace to be created
+1. Wait for the Codespace to be created
 1. Run `rojo serve` in the terminal or use the Rojo extension to serve
 1. Change the port visibility of `Rojo (34872)` to `Public`
 1. Open Roblox Studio and connect to the Rojo server
