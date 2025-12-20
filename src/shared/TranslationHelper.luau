@@ -1,4 +1,4 @@
---!strict
+--!nonstrict
 
 --[[
 	Safely loads translators based on the player's default locale and

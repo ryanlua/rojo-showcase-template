@@ -1,4 +1,4 @@
---!strict
+--!nonstrict
 
 --[[
 	Creates a topbar icon to open a feedback submission dialog.

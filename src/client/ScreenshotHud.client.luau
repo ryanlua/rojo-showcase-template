@@ -1,4 +1,4 @@
---!strict
+--!nonstrict
 
 --[[
 	Demonstrates how to use the ScreenshotHud to capture a screenshot of the game.
@@ -15,7 +15,7 @@ local StarterGui = game:GetService("StarterGui")
 local Players = game:GetService("Players")
 
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
-local player = Players.LocalPlayer
+local player = Players.LocalPlayer :: Player
 
 local iconImage: string = script:GetAttribute("IconImage") :: string
 	or "rbxasset://textures/ui/ScreenshotHud/Camera@3x.png"
