@@ -1,17 +1,16 @@
 {
-  "name": "rojo-showcase",
-  "servePort": 34872,
+  "name": "rojo-showcase-template",
   "tree": {
     "$className": "DataModel",
-
     "ReplicatedStorage": {
-      "$path": "src/shared"
+      "$path": "src/shared",
+      "Packages": {
+        "$path": "Packages"
+      }
     },
-
     "ServerScriptService": {
       "$path": "src/server"
     },
-
     "StarterPlayer": {
       "StarterPlayerScripts": {
         "$path": "src/client"
