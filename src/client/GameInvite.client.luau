@@ -1,4 +1,4 @@
---!nonstrict
+--!strict
 
 --[[
 	Shows how to use the SocialService to send game invites to friends.

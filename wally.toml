@@ -10,4 +10,4 @@ repository = "https://github.com/ryanlua/rojo-showcase-template"
 private = true
 
 [dependencies]
-topbarplus = "1foreverhd/topbarplus@3.4.0"
+topbarplus = "ryanlua/topbarplus@1.0.1"

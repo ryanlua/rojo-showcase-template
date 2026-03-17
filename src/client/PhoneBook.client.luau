@@ -1,4 +1,4 @@
---!nonstrict
+--!strict
 
 --[[
 	Prompts the given Player with the phone book to call someone.
