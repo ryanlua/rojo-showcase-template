@@ -14,8 +14,7 @@ local Players = game:GetService("Players")
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
 local player = Players.LocalPlayer :: Player
 
-local iconImage: string = script:GetAttribute("IconImage") :: string
-	or "rbxasset://textures/ui/PlayerList/FriendIcon@3x.png"
+local iconImage: string = script:GetAttribute("IconImage") :: string or "person-arrow-from-bottom-right"
 local iconCaption: string = script:GetAttribute("IconCaption") :: string or "Invite Friends"
 
 -- Function to check whether the player can send an invite
@@ -33,9 +32,22 @@ if canInvite then
 
 	-- Create the topbar icon
 	local icon = Icon.new()
-	icon:setImage(iconImage)
+	icon:modifyTheme({ "IconLabelContainer", "TargetWidth", 0 })
+	icon:setLabel(iconImage)
+	icon:setTextSize(24)
+	icon:setTextFont(
+		"rbxasset://LuaPackages/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIcons.json",
+		Enum.FontWeight.Bold,
+		Enum.FontStyle.Normal,
+		"Selected"
+	)
+	icon:setTextFont(
+		"rbxasset://LuaPackages/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIcons.json",
+		Enum.FontWeight.Regular,
+		Enum.FontStyle.Normal,
+		"Deselected"
+	)
 	icon:setCaption(iconCaption)
-	icon:setImageScale(0.7)
 
 	-- Prompt the game invite when the icon is selected
 	icon.selected:Connect(function(): ()

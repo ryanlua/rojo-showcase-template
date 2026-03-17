@@ -17,7 +17,7 @@ local Icon = require(ReplicatedStorage.Packages.topbarplus)
 
 local player = Players.LocalPlayer :: Player
 
-local iconImage: string = script:GetAttribute("IconImage") :: string or "rbxassetid://15239343417"
+local iconImage: string = script:GetAttribute("IconImage") :: string or "phone"
 local iconCaption: string = script:GetAttribute("IconCaption") :: string or "Phone Book"
 
 local isPhonebookOpen = false
@@ -33,9 +33,22 @@ end
 local canCall: boolean = canSendCallingInvite(player)
 if canCall then
 	local icon = Icon.new()
-	icon:setImage(iconImage)
+	icon:modifyTheme({ "IconLabelContainer", "TargetWidth", 0 })
+	icon:setLabel(iconImage)
+	icon:setTextSize(24)
+	icon:setTextFont(
+		"rbxasset://LuaPackages/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIcons.json",
+		Enum.FontWeight.Bold,
+		Enum.FontStyle.Normal,
+		"Selected"
+	)
+	icon:setTextFont(
+		"rbxasset://LuaPackages/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIcons.json",
+		Enum.FontWeight.Regular,
+		Enum.FontStyle.Normal,
+		"Deselected"
+	)
 	icon:setCaption(iconCaption)
-	icon:setImageScale(0.7)
 
 	-- Prompt the phone book when the icon is selected
 	icon.selected:Connect(function(): ()
