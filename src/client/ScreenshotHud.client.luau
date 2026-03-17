@@ -17,8 +17,7 @@ local StarterGui = game:GetService("StarterGui")
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
 local player = Players.LocalPlayer :: Player
 
-local iconImage: string = script:GetAttribute("IconImage") :: string
-	or "rbxasset://textures/ui/ScreenshotHud/Camera@3x.png"
+local iconImage: string = script:GetAttribute("IconImage") :: string or "photo-camera"
 local iconCaption: string = script:GetAttribute("IconCaption") :: string or "Capture"
 local closeWhenScreenshotTaken: boolean = script:GetAttribute("CloseWhenScreenshotTaken") :: boolean or true
 local hideCoreGui: boolean = script:GetAttribute("HideCoreGui") :: boolean or true
@@ -45,9 +44,22 @@ end
 
 -- Create the topbar icon
 local icon = Icon.new()
-icon:setImage(iconImage)
+icon:modifyTheme({ "IconLabelContainer", "TargetWidth", 0 })
+icon:setLabel(iconImage)
+icon:setTextSize(24)
+icon:setTextFont(
+	"rbxasset://LuaPackages/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIcons.json",
+	Enum.FontWeight.Bold,
+	Enum.FontStyle.Normal,
+	"Selected"
+)
+icon:setTextFont(
+	"rbxasset://LuaPackages/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIcons.json",
+	Enum.FontWeight.Regular,
+	Enum.FontStyle.Normal,
+	"Deselected"
+)
 icon:setCaption(iconCaption)
-icon:setImageScale(0.7)
 
 -- Change the ScreenshotHud and CoreGuiEnabled when icon is toggled
 icon.toggled:Connect(function(isSelected: boolean): ()

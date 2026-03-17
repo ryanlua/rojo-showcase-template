@@ -11,13 +11,26 @@ local SocialService = game:GetService("SocialService")
 
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
 
-local iconImage: string = script:GetAttribute("IconImage") :: string or "rbxasset://textures/ui/Emotes/ErrorIcon.png"
+local iconImage: string = script:GetAttribute("IconImage") :: string or "speech-bubble-align-left"
 local iconCaption: string = script:GetAttribute("IconCaption") :: string or "Feedback"
 
 local icon = Icon.new()
-icon:setImage(iconImage)
+icon:modifyTheme({ "IconLabelContainer", "TargetWidth", 0 })
+icon:setLabel(iconImage)
+icon:setTextSize(24)
+icon:setTextFont(
+	"rbxasset://LuaPackages/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIcons.json",
+	Enum.FontWeight.Bold,
+	Enum.FontStyle.Normal,
+	"Selected"
+)
+icon:setTextFont(
+	"rbxasset://LuaPackages/Packages/_Index/BuilderIcons/BuilderIcons/BuilderIcons.json",
+	Enum.FontWeight.Regular,
+	Enum.FontStyle.Normal,
+	"Deselected"
+)
 icon:setCaption(iconCaption)
-icon:setImageScale(1)
 icon:oneClick(true)
 
 -- Prompt for feedback when the icon is selected
