@@ -8,8 +8,8 @@
 	https://create.roblox.com/docs/chat/customizing-in-experience-text-chat#adding-chat-tags
 ]]
 
-local TextChatService = game:GetService("TextChatService")
 local Players = game:GetService("Players")
+local TextChatService = game:GetService("TextChatService")
 
 -- Disable the script if the game is not using TextChatService
 if TextChatService.ChatVersion ~= Enum.ChatVersion.TextChatService then

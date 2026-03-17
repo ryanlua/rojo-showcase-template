@@ -6,8 +6,8 @@
 	https://create.roblox.com/docs/en-us/reference/engine/classes/SocialService#PromptFeedbackSubmissionAsync
 ]]
 
-local SocialService = game:GetService("SocialService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SocialService = game:GetService("SocialService")
 
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
 

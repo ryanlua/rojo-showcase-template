@@ -9,8 +9,8 @@
 	https://create.roblox.com/store/asset/13595087289/Sprint-With-Button
 --]]
 
-local Players = game:GetService("Players")
 local ContextActionService = game:GetService("ContextActionService")
+local Players = game:GetService("Players")
 
 -- Get the player's humanoid
 local player = Players.LocalPlayer :: Player

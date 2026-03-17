@@ -9,10 +9,10 @@
 ]]
 
 local GuiService = game:GetService("GuiService")
+local Players = game:GetService("Players")
 local PolicyService = game:GetService("PolicyService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local StarterGui = game:GetService("StarterGui")
-local Players = game:GetService("Players")
 
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
 local player = Players.LocalPlayer :: Player

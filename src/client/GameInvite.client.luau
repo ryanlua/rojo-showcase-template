@@ -7,9 +7,9 @@
 	https://create.roblox.com/docs/production/promotion/invite-prompts
 ]]
 
+local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local SocialService = game:GetService("SocialService")
-local Players = game:GetService("Players")
 
 local Icon = require(ReplicatedStorage.Packages.topbarplus)
 local player = Players.LocalPlayer :: Player
