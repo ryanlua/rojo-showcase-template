@@ -1,4 +1,4 @@
---!nonstrict
+--!strict
 
 --[[
 	Demonstrates how to use the ScreenshotHud to capture a screenshot of the game.
